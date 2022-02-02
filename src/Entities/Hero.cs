@@ -1,6 +1,6 @@
 namespace src.Entities
 {
-    public class Hero
+    public abstract class Hero // abstract é uma classe que as outras classes pdoem usa, apenas, herdar
     {
         public Hero(string nome, int level, string tipo)
         { 

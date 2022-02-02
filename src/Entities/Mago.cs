@@ -15,7 +15,10 @@ namespace src.Entities
        }
         public string Ataque(int Bonus)
        {
-           return this.Nome + " lançou uma magia com um bonus de " + Bonus;
-       }
+           if(Bonus > 6)
+            return this.Nome + " lançou uma magia  efetiva com um bonus de " + Bonus;
+           else
+            return this.Nome + " lançou uma magia  pouco efetiva com um bonus de " + Bonus;
+       }    
     }
 }
